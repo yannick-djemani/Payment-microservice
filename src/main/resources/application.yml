@@ -1,0 +1,23 @@
+server:
+  port: 8085
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/paymentdb
+    username: root
+    password: developpeur2020
+  jpa:
+    databasePlatform: org.hibernate.dialect.MySQL57InnoDBDialect
+    hibernate:
+      ddl-auto: update
+  application:
+    name: PAYMENT-SERVICE
+  config:
+    import: configserver:http://localhost:9296
+#  security:
+#    oauth2:
+#      resourceserver:
+#        jwt:
+#          issuer-uri: https://dev-86929098.okta.com/oauth2/default
+
+
