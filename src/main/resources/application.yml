@@ -20,4 +20,7 @@ spring:
 #        jwt:
 #          issuer-uri: https://dev-86929098.okta.com/oauth2/default
 
-
+#okta:
+#  oauth2:
+#    issuer: https://dev-86929098.okta.com/oauth2/default
+#    audience: api://default
